@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<style>
+    html{
+        text-align: center;
+        font-size: xxx-large;
+        color: aqua;
+        background-color: black;
+    }
+    span{
+        border: 3px solid red;
+        padding: 0.5%;
+    }
+    .a{
+        display: block;
+        margin-top: 150px;
+    }
+</style>
+<script>
+    function f(){
+        var d = new Date
+        document.querySelector("#day").innerHTML=d.getDate()
+        document.querySelector("#month").innerHTML=d.getMonth()
+        document.querySelector("#year").innerHTML=d.getFullYear()
+        document.querySelector("#hour").innerHTML=d.getHours()
+        document.querySelector("#min").innerHTML=d.getMinutes()
+        document.querySelector("#sec").innerHTML=d.getSeconds()
+    }
+    function x(){
+        setInterval(f,1000)
+    }
+</script>
+<body onload="x()">
+    <div class="a">
+        <div>
+            <span id="day"></span>-<span id="month"></span>-<span id="year"></span>
+        </div>
+        <br>
+        <div>
+            <span id="hour"></span>:<span id="min"></span>:<span id="sec"></span>
+        </div>
+    </div>
+</body>
+</html>
