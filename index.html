@@ -25,7 +25,7 @@
     function f(){
         var d = new Date
         document.querySelector("#day").innerHTML=d.getDate()
-        document.querySelector("#month").innerHTML=d.getMonth()
+        document.querySelector("#month").innerHTML=(d.getMonth()+1)
         document.querySelector("#year").innerHTML=d.getFullYear()
         document.querySelector("#hour").innerHTML=d.getHours()
         document.querySelector("#min").innerHTML=d.getMinutes()
